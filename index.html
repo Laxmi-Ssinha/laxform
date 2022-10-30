@@ -1,0 +1,73 @@
+<!-- Data Validation
+Data validation is the process of ensuring that user input is clean, correct, and useful.
+
+Typical validation tasks are:
+
+has the user filled in all required fields?
+has the user entered a valid date?
+has the user entered text in a numeric field?
+Most often, the purpose of data validation is to ensure correct user input.
+
+Validation can be defined by many different methods, and deployed in many different ways.
+
+Server side validation is performed by a web server, after input has been sent to the server.
+
+Client side validation is performed by a web browser, before input is sent to a web server. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body background="bg2.jpg">
+    <div class="box">
+        <h1>Registration Form</h1><br>
+    <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name">
+           &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            Name:&nbsp; &nbsp;&nbsp; &nbsp; <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+        </div><br>
+
+        <div class="formdesign" id="email">
+            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Email:&nbsp; &nbsp;&nbsp; &nbsp; <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+        </div><br>
+
+        <div class="formdesign" id="phone">
+            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Phone:&nbsp; &nbsp;&nbsp; &nbsp; <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+        </div><br>
+        <div class="formdesign" id="Gender">
+            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Gender:&nbsp; &nbsp;&nbsp; &nbsp; <label >Male<input type="radio"></label>
+            <label>Female<input type="radio"></label>
+           <label>Others<input type="radio"></label>
+        </div><br>
+        <div class="formdesign" id="country">
+            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label id='country' name="con" required>Country:&nbsp; &nbsp;&nbsp; &nbsp;</label><b><span class="formerror"></span>
+                <select id='country' name="con" required>
+                <option>Please Choose</option>
+                <option>America</option>
+                <option>Australia</option>
+                <option>Sweden</option>
+                <option>Africa</option>
+            </select><b><span class="formerror"></span></b>
+            </div><br>
+            <div class="formdesign" id="button">
+      <center> <input class="but" type="submit" value="Submit" name="butt"></center> </div>
+
+    </form>
+</div>
+</body>
+<script src="index.js"></script>
+
+</html>

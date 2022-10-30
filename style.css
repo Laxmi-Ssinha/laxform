@@ -1,0 +1,65 @@
+
+        body {
+            padding: 10px 50px;
+        }
+
+        .formdesign {
+            font-size: 20px;
+
+        }
+
+        /* .formdesign input {
+            width: 50%;
+            padding: 12px 20px;
+            border: 1px solid blue;
+            margin: 14px;
+            border-radius: 4px;
+            font-size: 15px;
+        } */
+        .formdesign input{
+            border-radius: 4px;
+            padding: 5px 20px;
+        }
+
+        .formerror {
+            color: red;
+        }
+
+        .but {
+            border-radius: 9px;
+            width: 90px;
+            height: 30px;
+            font-size: 15px;
+            margin: 22px 20px;
+            background-color: grey;
+            color: white;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            
+        }
+        #name{
+            color: white;
+        }
+        #email{
+            color:white; 
+        }
+        #phone{
+            color:white;
+        }
+        #Gender{
+            color: white;
+        }
+        #country{
+            fo
+        }
+        .box{
+            background-color: rgba(128, 128, 128, 0.527);
+            margin: 5% 5% 5% 5%;
+            padding: 4% 6% 4% 12%;
+            /* background-image:url('t3.jpeg'); */
+            
+            /* background-image:th.jpg; */
+            
+        }
